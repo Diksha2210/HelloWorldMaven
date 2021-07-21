@@ -15,18 +15,12 @@
   </properties>
   
 <distributionManagement>
-       <repository>
-    <id>releases</id>
-    <!-- CHANGE HERE by your team nexus server -->
-    <url>http://3.226.248.115:8081/repository/maven-releases/</url>
+      <repository>
+         <id>internal.repo</id>
+         <name>Internal repo</name>
+         <url>file:///var/lib/jenkins/myartifacts/</url>
        </repository>
-     <snapshotRepository>
-    <id>snapshots</id>
-    <!-- CHANGE HERE by your team nexus server -->
-    <url>http://3.226.248.115:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-       </distributionManagement>
-
+	   </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
